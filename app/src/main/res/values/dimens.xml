@@ -1,0 +1,22 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+
+    <!-- View-specific value -->
+    <dimen name="tabLayoutHeight">48dp</dimen>
+    <dimen name="tabLayoutHeightTextImage">50dp</dimen>
+    <dimen name="martMargin">8dp</dimen>
+
+    <!-- Main menu specific -->
+    <dimen name="menu_marginBottom">4dp</dimen>
+
+    <!-- SignUp specific -->
+
+    <!-- Setting specific -->
+    <dimen name="setting_fontSize">14sp</dimen>
+    <dimen name="setting_height">78dp</dimen>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+
+    <!--genaral spacing-->
+    <dimen name="spacing_xmedium">7dp</dimen>
+</resources>

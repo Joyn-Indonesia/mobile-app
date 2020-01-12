@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardBackgroundColor="@android:color/white"
+    app:cardCornerRadius="@dimen/spacing_xmedium"
+    app:cardElevation="5dp"
+    android:id="@+id/nearme_item"
+    app:cardUseCompatPadding="true">
+
+    <LinearLayout
+        android:id="@+id/makanan_item"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <customfonts.TextViewSFProDisplayRegular
+            android:id="@+id/deskripsi_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginRight="142dp"
+            android:text="4pcs wings, french fries asda sasd asd asd asd asd"
+            android:textColor="@color/grey"
+            android:textSize="14sp"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="100dp"
+            android:layout_height="fill_parent"
+            android:scaleType="centerCrop"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/noimage" />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp">
+
+            <customfonts.TextViewSFProDisplayMedium
+                android:id="@+id/makanan_text"
+                android:textSize="13sp"
+                android:textColor="@color/black"
+                android:layout_width="wrap_content"
+                android:layout_marginRight="10dp"
+                android:layout_height="wrap_content"
+                android:text="food foodfood food" />
+
+            <EditText
+                android:id="@+id/notes_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/deskripsi_text"
+                android:background="@null"
+                android:hint="@string/food_notes"
+                android:textColor="@color/grey"
+                android:textSize="12sp" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="10dp">
+
+                <customfonts.TextViewSFProDisplayMedium
+                    android:id="@+id/harga_text"
+                    android:textSize="14sp"
+                    android:textColor="@color/material_orange_800"
+                    android:layout_gravity="center_vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="$. 1.6" />
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:gravity="right"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp">
+
+
+                    <customfonts.TextViewSFProDisplayRegular
+                        android:id="@+id/remove_quantity"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:paddingLeft="12dp"
+                        android:paddingRight="12dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_below="@+id/harga_text"
+                        android:text="-"
+                        android:textColor="@color/white"
+                        android:gravity="center"
+                        android:textSize="25dp"
+                        android:background="@drawable/rect_blue_add" />
+
+                    <customfonts.TextViewSFProDisplayRegular
+                        android:id="@+id/quantity_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/harga_text"
+                        android:layout_toLeftOf="@+id/add_quantity"
+                        android:background="@drawable/rect_trans_col"
+                        android:paddingLeft="8dp"
+                        android:paddingRight="8dp"
+                        android:layout_gravity="start"
+                        android:paddingTop="7.5dp"
+                        android:paddingBottom="7.5dp"
+                        android:text="0"
+                        android:textSize="12dp" />
+
+                    <customfonts.TextViewSFProDisplayRegular
+                        android:id="@+id/add_quantity"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:paddingLeft="8dp"
+                        android:paddingRight="8dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_below="@+id/harga_text"
+                        android:text="+"
+                        android:textColor="@color/white"
+                        android:gravity="center"
+                        android:textSize="25dp"
+                        android:background="@drawable/rect_blue_delete" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+</android.support.v7.widget.CardView>

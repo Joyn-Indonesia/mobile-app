@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:adjustViewBounds="true"
+            android:scaleType="fitXY" />
+
+
+        <com.ogaclejapan.smarttablayout.SmartTabLayout
+            android:id="@+id/main_tabLayout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/tabLayoutHeightTextImage"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="5dp"
+            android:background="@color/white"
+            app:stl_clickable="true"
+            app:stl_defaultTabTextColor="@color/grey"
+            app:stl_distributeEvenly="true"
+            app:stl_dividerColor="@color/white"
+            app:stl_indicatorColor="@color/grey"
+            app:stl_indicatorInterpolation="linear"
+            app:stl_indicatorThickness="0dp"
+            app:stl_underlineColor="@color/white" />
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/white"
+            app:srcCompat="@drawable/logo_header" />
+
+        <com.joyn.me.utils.view.CustomViewPager
+            android:id="@+id/main_viewPager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="50dp"
+            android:layout_marginTop="50dp" />
+    </FrameLayout>
+
+
+</LinearLayout>

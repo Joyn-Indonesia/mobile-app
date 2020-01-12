@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/next_destination"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingRight="20dp"
+        android:weightSum="1"
+        android:orientation="horizontal"
+        android:background="@color/material_blue_grey_50">
+
+        <customfonts.TextViewSFProDisplayMedium
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.25"
+            android:layout_marginLeft="5dp"
+            android:padding="8dp"
+            android:text="@string/mbox_destination"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+        <customfonts.Button_SF_Pro_Display_Medium
+            android:id="@+id/btn_removenext"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:layout_weight="0.75"
+            android:background="@color/colorPrimary"
+            android:text="REMOVE"
+            android:textSize="14sp"
+            android:textColor="@color/material_light_white"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:paddingTop="10dp"
+        android:paddingLeft="12dp"
+        android:paddingRight="20dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:focusableInTouchMode="true"
+            android:background="@drawable/rounded_corners_edittext_dark">
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:src="@drawable/ic_location_blue2"
+                android:layout_marginLeft="15dp"
+                android:scaleType="fitCenter" />
+
+            <customfonts.EditTextSFProDisplayRegular
+                android:id="@+id/dest_loc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/mbox_location"
+                android:textSize="16sp"
+                android:paddingLeft="15dp"
+                android:layout_gravity="center_vertical"
+                android:clickable="true"
+                android:background="@drawable/rounded_corners_edittext_dark"
+                android:cursorVisible="false" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/rounded_corners_edittext_dark">
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="8dp"
+                android:background="@drawable/ic_menu_list"
+                android:scaleType="fitCenter"
+                android:backgroundTint="@color/material_orange_800"
+                android:layout_marginLeft="15dp" />
+
+            <customfonts.EditTextSFProDisplayRegular
+                android:id="@+id/dest_locdetail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:hint="@string/mbox_location_detail"
+                android:textSize="16sp"
+                android:inputType="text"
+                android:layout_marginLeft="15dp"
+                android:background="@drawable/rounded_corners_edittext_dark" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@drawable/rounded_corners_edittext_dark"
+            android:layout_marginTop="5dp">
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:background="@drawable/ic_contact_person"
+                android:backgroundTint="@color/colorPrimary"
+                android:layout_marginLeft="15dp"
+                android:scaleType="fitCenter" />
+
+            <customfonts.TextViewSFProDisplayRegular
+                android:id="@+id/dest_contact"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/mbox_contact_person"
+                android:textSize="16sp"
+                android:paddingLeft="15dp"
+                android:layout_gravity="center|left"
+                android:backgroundTint="@color/colorPrimary"
+                android:clickable="true"
+                android:cursorVisible="false" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/add_destcontact"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="32dp"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <customfonts.EditTextSFProDisplayRegular
+                android:id="@+id/dest_contactname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/mbox_name"
+                android:inputType="text"
+                android:textSize="16sp"
+                android:backgroundTint="@color/colorPrimary" />
+
+            <customfonts.EditTextSFProDisplayRegular
+                android:id="@+id/dest_contactphone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/mbox_phone"
+                android:inputType="phone"
+                android:textSize="16sp"
+                android:backgroundTint="@color/colorPrimary" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/rounded_corners_edittext_dark">
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="8dp"
+                android:background="@drawable/ic_menu_list"
+                android:scaleType="fitCenter"
+                android:backgroundTint="@color/material_green_800"
+                android:layout_marginLeft="15dp" />
+
+            <customfonts.EditTextSFProDisplayRegular
+                android:id="@+id/dest_instruction"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:hint="@string/mbox_instruction"
+                android:textSize="16sp"
+                android:inputType="text"
+                android:layout_marginLeft="15dp"
+                android:background="@drawable/rounded_corners_edittext_dark" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

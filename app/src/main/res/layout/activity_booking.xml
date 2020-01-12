@@ -1,0 +1,419 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_booking"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/material_light_white"
+    tools:context="com.joyn.me.mFood.BookingActivity">
+
+    <FrameLayout
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:adjustViewBounds="true"
+            android:background="@color/blue"
+            android:scaleType="fitXY" />
+
+        <ImageView
+            android:id="@+id/btn_home"
+            android:layout_width="36dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="12dp"
+            android:src="@drawable/ic_arrow_back_yellow"
+            android:adjustViewBounds="true"
+            android:tint="@color/white" />
+
+        <customfonts.TextViewSFProDisplayMedium
+            android:id="@+id/mFood_title"
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="@string/food_booking"
+            android:textAllCaps="true"
+            android:textColor="@color/material_light_white"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+    </FrameLayout>
+
+    <ScrollView
+        android:layout_below="@+id/toolbar"
+        android:layout_above="@+id/order_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@color/material_blue_grey_50"
+                android:focusable="true"
+                android:focusableInTouchMode="true">
+
+                <customfonts.TextViewSFProDisplayMedium
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:padding="8dp"
+                    android:text="@string/food_itemsToOrder"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/food_orders"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <customfonts.TextViewSFProDisplayMedium
+                android:id="@+id/add_food"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:paddingRight="10dp"
+                android:paddingLeft="15dp"
+                android:gravity="center"
+                android:textColor="@color/colorPrimary"
+                android:layout_marginBottom="10dp"
+                android:text="Add More ++"
+                android:textSize="20dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@color/material_blue_grey_50">
+
+                <customfonts.TextViewSFProDisplayMedium
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:padding="8dp"
+                    android:text="@string/food_deliver"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/booking_location"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp"
+                android:paddingLeft="12dp"
+                android:paddingRight="15dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/ic_location_orange"
+                    android:scaleType="fitCenter" />
+
+                <customfonts.TextViewSFProDisplayRegular
+                    android:id="@+id/food_destination"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:paddingRight="10dp"
+                    android:paddingLeft="15dp"
+                    android:text="@string/food_destination"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+
+            <customfonts.EditTextSFProDisplayRegular
+                android:id="@+id/food_addNotes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="45dp"
+                android:paddingLeft="12dp"
+                android:layout_marginRight="8dp"
+                android:textSize="12sp"
+                android:hint="@string/food_addNotes" />
+
+            <LinearLayout
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@color/material_blue_grey_50">
+
+                <customfonts.TextViewSFProDisplayMedium
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:padding="8dp"
+                    android:text="@string/food_payment"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:layout_marginTop="5dp"
+                android:weightSum="1"
+                android:orientation="horizontal">
+
+                <customfonts.TextViewSFProDisplayRegular
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="5dp"
+                    android:text="@string/food_cost"
+                    android:textSize="16sp"
+                    android:drawableLeft="@drawable/ic_mfood_cost" />
+
+                <customfonts.TextViewSFProDisplayRegular
+                    android:id="@+id/food_cost"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:gravity="right"
+                    android:padding="5dp"
+                    android:layout_marginRight="15dp"
+                    android:text="$. 2.3"
+                    android:textSize="16sp"
+                    android:textColor="@color/material_blue_grey_700" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:weightSum="1"
+                android:orientation="horizontal">
+
+                <customfonts.TextViewSFProDisplayRegular
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="5dp"
+                    android:text="@string/food_delivery"
+                    android:textSize="16sp"
+                    android:drawableLeft="@drawable/ic_mfood_cost" />
+
+                <customfonts.TextViewSFProDisplayRegular
+                    android:id="@+id/delivery_cost"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:gravity="right"
+                    android:padding="5dp"
+                    android:layout_marginRight="15dp"
+                    android:text="$. 2.3"
+                    android:textSize="16sp"
+                    android:textColor="@color/material_blue_grey_700" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:background="@color/blueSoft" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:weightSum="1"
+                android:orientation="horizontal">
+
+                <customfonts.TextViewSFProDisplayMedium
+                    android:id="@+id/text_service"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:gravity="center_vertical"
+                    android:drawableLeft="@drawable/ic_mfood_cost"
+                    android:text="@string/food_total"
+                    android:textSize="18sp" />
+
+                <customfonts.TextViewSFProDisplayMedium
+                    android:id="@+id/value_service"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:gravity="right"
+                    android:padding="5dp"
+                    android:layout_marginRight="15dp"
+                    android:text="$. 2.34"
+                    android:textSize="16sp"
+                    android:textColor="@color/material_blue_grey_700" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:weightSum="1"
+                android:background="@color/material_green_400"
+                android:orientation="horizontal">
+
+                <customfonts.TextViewSFProDisplayMedium
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="5dp"
+                    android:text="@string/food_cash"
+                    android:textSize="16sp"
+                    android:textColor="@color/material_light_white"
+                    android:drawableLeft="@drawable/ic_mfood_cost" />
+
+                <customfonts.TextViewSFProDisplayMedium
+                    android:id="@+id/food_cash"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:gravity="right"
+                    android:padding="5dp"
+                    android:layout_marginRight="15dp"
+                    android:text="$. 2.34"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/material_light_white" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@color/material_blue_grey_50">
+
+                <customfonts.TextViewSFProDisplayMedium
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:padding="8dp"
+                    android:text="@string/food_pay"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/material_blue_grey_200" />
+
+            <RelativeLayout
+                android:id="@+id/food_payment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/service_order"
+                android:paddingLeft="8dp"
+                android:background="@color/material_light_white"
+                android:clickable="true">
+
+                <RadioGroup
+                    android:id="@+id/service_paymentgroup"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <customfonts.RadioButton_SF_Pro_Display_Medium
+                        android:id="@+id/radio_mpay"
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp"
+                        android:text="@string/text_mPay"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:theme="@style/PaymentButton" />
+
+
+                    <customfonts.RadioButton_SF_Pro_Display_Medium
+                        android:id="@+id/radio_cash"
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp"
+                        android:text="@string/text_cash"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:theme="@style/PaymentButton"
+                        android:checked="true" />
+
+                </RadioGroup>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp">
+
+                    <customfonts.TextViewSFProDisplayRegular
+                        android:id="@+id/mpay_balance"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="108dp"
+                        android:text="@string/text_updating"
+                        android:textColor="@color/material_blue_grey_700"
+                        android:textSize="14sp" />
+
+                    <customfonts.Button_SF_Pro_Display_Medium
+                        android:id="@+id/mpay_topup"
+                        style="@style/Widget.AppCompat.Button.Borderless"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="5dp"
+                        android:text="@string/text_topUp"
+                        android:textColor="@color/material_blue_grey_700" />
+
+                    <customfonts.TextViewSFProDisplayRegular
+                        android:id="@+id/mpay_discount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_below="@+id/mpay_balance"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginStart="30dp"
+                        android:text="@string/ride_discount"
+                        android:textColor="@color/material_blue_grey_700"
+                        android:textSize="12sp" />
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <customfonts.Button_SF_Pro_Display_Medium
+        android:id="@+id/order_btn"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorPrimarySoft"
+        android:gravity="center"
+        android:text="@string/text_order"
+        android:textSize="18sp"
+        android:textColor="@color/material_light_white"
+        android:clickable="false" />
+
+</RelativeLayout>

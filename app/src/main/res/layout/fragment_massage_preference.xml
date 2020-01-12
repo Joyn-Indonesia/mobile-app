@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardBackgroundColor="@android:color/white"
+            app:cardCornerRadius="@dimen/spacing_xmedium"
+            app:cardElevation="2dp"
+            android:id="@+id/itemMassageMenu_item"
+            app:cardUseCompatPadding="true">
+
+
+            <ImageView
+                android:id="@+id/massagePreference_image"
+                android:layout_width="match_parent"
+                android:layout_height="164dp" />
+
+
+        </android.support.v7.widget.CardView>
+
+        <customfonts.TextViewSFProDisplayMedium
+            android:id="@+id/massagePreference_massageService"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAllCaps="true"
+            android:textColor="@color/black"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:textSize="20sp"
+            tools:text="MENU 1" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/grey"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/material_light_white"
+            android:orientation="vertical">
+
+            <customfonts.TextViewSFProDisplayMedium
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:text="@string/massage_yourGender"
+                android:textAllCaps="true"
+                android:textColor="@color/colorPrimary"
+                android:textSize="20sp" />
+
+            <RadioGroup
+                android:id="@+id/massagePreference_yourGenderGroup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp">
+
+
+                <customfonts.RadioButton_SF_Pro_Display_Medium
+                    android:id="@+id/massagePreference_yourGenderMale"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:button="@android:color/transparent"
+                    android:drawableTop="@drawable/ic_gender_male"
+                    android:gravity="center"
+                    android:padding="8dp"
+                    android:text="@string/massage_genderMale"
+                    android:textAlignment="center"
+                    android:textSize="18sp"
+                    android:checked="true"
+                    android:background="@drawable/massage_checbox_background" />
+
+                <customfonts.RadioButton_SF_Pro_Display_Medium
+                    android:id="@+id/massagePreference_yourGenderFemale"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:button="@android:color/transparent"
+                    android:drawableTop="@drawable/ic_gender_female"
+                    android:gravity="center"
+                    android:padding="8dp"
+                    android:text="@string/massage_genderFemale"
+                    android:textAlignment="center"
+                    android:textSize="18sp"
+                    android:background="@drawable/massage_checbox_background" />
+            </RadioGroup>
+
+            <customfonts.TextViewSFProDisplayMedium
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginRight="8dp"
+                android:text="@string/massage_duration"
+                android:textAllCaps="true"
+                android:textColor="@color/colorPrimary"
+                android:textSize="20sp" />
+
+            <RadioGroup
+                android:id="@+id/massagePreference_durationGroup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="3"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp">
+
+                <customfonts.RadioButton_SF_Pro_Display_Medium
+                    android:id="@+id/massagePreference_duration60"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:button="@android:color/transparent"
+                    android:gravity="center"
+                    android:padding="8dp"
+                    android:text="@string/massage_60duration"
+                    android:textAlignment="center"
+                    android:textSize="18sp"
+                    android:checked="true"
+                    android:background="@drawable/massage_checbox_background" />
+
+                <customfonts.RadioButton_SF_Pro_Display_Medium
+                    android:id="@+id/massagePreference_duration90"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:button="@android:color/transparent"
+                    android:gravity="center"
+                    android:padding="8dp"
+                    android:text="@string/massage_90duration"
+                    android:textAlignment="center"
+                    android:textSize="18sp"
+                    android:background="@drawable/massage_checbox_background" />
+
+                <customfonts.RadioButton_SF_Pro_Display_Medium
+                    android:id="@+id/massagePreference_duration120"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:button="@android:color/transparent"
+                    android:gravity="center"
+                    android:padding="8dp"
+                    android:text="@string/massage_120duration"
+                    android:textAlignment="center"
+                    android:textSize="18sp"
+                    android:background="@drawable/massage_checbox_background" />
+            </RadioGroup>
+
+            <customfonts.TextViewSFProDisplayMedium
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginRight="8dp"
+                android:text="@string/massage_therapistPreference"
+                android:textAllCaps="true"
+                android:textColor="@color/colorPrimary"
+                android:textSize="20sp" />
+
+            <RadioGroup
+                android:id="@+id/massagePreference_therapistGroup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="3"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp">
+
+                <customfonts.RadioButton_SF_Pro_Display_Medium
+                    android:id="@+id/massagePreference_therapistMale"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:button="@android:color/transparent"
+                    android:drawableTop="@drawable/ic_gender_male"
+                    android:gravity="center"
+                    android:padding="8dp"
+                    android:text="@string/massage_genderMale"
+                    android:textAlignment="center"
+                    android:textSize="18sp"
+                    android:checked="true"
+                    android:background="@drawable/massage_checbox_background" />
+
+                <customfonts.RadioButton_SF_Pro_Display_Medium
+                    android:id="@+id/massagePreference_therapistFemale"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:button="@android:color/transparent"
+                    android:drawableTop="@drawable/ic_gender_female"
+                    android:gravity="center"
+                    android:padding="8dp"
+                    android:text="@string/massage_genderFemale"
+                    android:textAlignment="center"
+                    android:textSize="18sp"
+                    android:background="@drawable/massage_checbox_background" />
+
+                <customfonts.RadioButton_SF_Pro_Display_Medium
+                    android:id="@+id/massagePreference_therapistNoPrefs"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:button="@android:color/transparent"
+                    android:drawableTop="@drawable/ic_gender_unspecified"
+                    android:gravity="center"
+                    android:padding="8dp"
+                    android:text="@string/massage_genderNoPreference"
+                    android:textAlignment="center"
+                    android:textSize="16sp"
+                    android:background="@drawable/massage_checbox_background" />
+            </RadioGroup>
+
+            <customfonts.Button_SF_Pro_Display_Medium
+                android:id="@+id/massagePreference_next"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimary"
+                android:text="@string/massage_next"
+                android:textColor="@color/material_light_white"
+                android:layout_marginTop="8dp"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

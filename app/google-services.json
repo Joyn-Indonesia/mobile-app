@@ -1,0 +1,115 @@
+{
+  "project_info": {
+    "project_number": "833942483367",
+    "firebase_url": "https://gorideme-f7c64.firebaseio.com",
+    "project_id": "gorideme-f7c64",
+    "storage_bucket": "gorideme-f7c64.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:833942483367:android:5e7f5f179ee8efba",
+        "android_client_info": {
+          "package_name": "com.ride.me"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "833942483367-cemundictghk1o82be6hmgs7ajvvlg78.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.ride.me",
+            "certificate_hash": "947ea1d6e771effb241cc45542a6d7862915bee3"
+          }
+        },
+        {
+          "client_id": "833942483367-0us4fsj6tbd4vaqioa2fvmdb4jj9s560.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.ride.me",
+            "certificate_hash": "12a6e5900c846e9fec04c25608ea2b17106c2e63"
+          }
+        },
+        {
+          "client_id": "833942483367-vige6p7ljon417oaosdd1eele20fpnvj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBemQ55nKjwcqiWWi6zRY_EmZErfDmu0TY"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "833942483367-vige6p7ljon417oaosdd1eele20fpnvj.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:833942483367:android:b4b685a9ba2550a8",
+        "android_client_info": {
+          "package_name": "com.rideme.driver"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "833942483367-24t12j1vuj72iqtt616qh742qcjp6rkf.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.rideme.driver",
+            "certificate_hash": "6a3b21d61b21a003ba2ce73f5794a6493f18c3f7"
+          }
+        },
+        {
+          "client_id": "833942483367-96g5dv7pd0tebofr2i2hkdhvaqsves3u.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.rideme.driver",
+            "certificate_hash": "12a6e5900c846e9fec04c25608ea2b17106c2e63"
+          }
+        },
+        {
+          "client_id": "833942483367-vige6p7ljon417oaosdd1eele20fpnvj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBemQ55nKjwcqiWWi6zRY_EmZErfDmu0TY"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "833942483367-vige6p7ljon417oaosdd1eele20fpnvj.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

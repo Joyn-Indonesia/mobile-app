@@ -1,0 +1,616 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginBottom="60dp"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/white"
+            android:orientation="horizontal">
+
+            <customfonts.TextViewSFProDisplayMedium
+                android:id="@+id/home_mPayBalance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="27dp"
+                android:text="@string/text_updating"
+                android:textColor="@color/black"
+                android:textSize="15dp"
+                android:gravity="center"
+                android:layout_marginTop="10dp"
+                android:textStyle="bold" />
+
+            <customfonts.Button_SF_Pro_Display_Medium
+                android:id="@+id/home_topUpButton"
+                android:layout_width="80dp"
+                android:layout_height="match_parent"
+                android:layout_alignBaseline="@+id/home_mPayBalance"
+                android:layout_alignBottom="@+id/home_mPayBalance"
+                android:layout_alignParentEnd="true"
+                android:background="@drawable/rect_topup"
+                android:gravity="center"
+                android:text="@string/text_topUp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:textColor="@color/white"
+                android:textSize="15.0sp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/grey" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="158dp"
+            android:orientation="vertical">
+
+            <cn.trinea.android.view.autoscrollviewpager.AutoScrollViewPager
+                android:id="@+id/slide_viewPager"
+                android:layout_width="match_parent"
+                android:background="@drawable/noimage"
+                android:layout_height="match_parent" />
+
+            <me.relex.circleindicator.CircleIndicator
+                android:id="@+id/slide_viewPager_indicator"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerInParent="true" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/grey" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:baselineAligned="false"
+            android:orientation="horizontal"
+            android:background="@color/white"
+            android:weightSum="1">
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="90dip"
+                android:layout_weight="0.25"
+                android:clickable="true"
+                android:gravity="center">
+
+                <RelativeLayout
+                    android:id="@+id/home_mRide"
+                    android:layout_width="60dp"
+                    android:layout_height="80dp"
+                    android:layout_marginTop="10dp"
+                    android:clickable="true">
+
+                    <ImageView
+                        android:id="@+id/imageView4"
+                        android:layout_width="fill_parent"
+                        android:layout_height="60dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:background="@drawable/rounded_corners_button_transp"
+                        android:scaleType="center"
+                        android:src="@mipmap/pro_motor" />
+
+                    <customfonts.TextViewSFProDisplayMedium
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/imageView4"
+                        android:layout_centerHorizontal="true"
+                        android:maxLines="1"
+                        android:text="@string/home_mRide"
+                        android:textAllCaps="false"
+                        android:textColor="@color/black"
+                        android:textSize="13sp" />
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="90dip"
+                android:layout_weight="0.25"
+                android:clickable="true"
+                android:gravity="center">
+
+                <RelativeLayout
+                    android:id="@+id/home_mCar"
+                    android:layout_width="60dp"
+                    android:layout_height="80dp"
+                    android:layout_marginTop="10dp"
+                    android:clickable="true">
+
+                    <ImageView
+                        android:layout_width="fill_parent"
+                        android:layout_height="60dp"
+                        android:background="@drawable/rounded_corners_button_transp"
+                        android:scaleType="center"
+                        android:src="@mipmap/pro_mobil"
+                        android:id="@+id/imageView7" />
+
+                    <customfonts.TextViewSFProDisplayMedium
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/imageView7"
+                        android:layout_centerHorizontal="true"
+                        android:maxLines="1"
+                        android:text="@string/home_mCar"
+                        android:textAllCaps="false"
+                        android:textColor="@color/black"
+                        android:textSize="13sp" />
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="90dip"
+                android:layout_weight="0.25"
+                android:clickable="true"
+                android:gravity="center">
+
+                <RelativeLayout
+                    android:id="@+id/home_mSend"
+                    android:layout_width="60dp"
+                    android:layout_height="80dp"
+                    android:layout_marginTop="10dp"
+                    android:clickable="true">
+
+                    <ImageView
+                        android:layout_width="fill_parent"
+                        android:layout_height="60dp"
+                        android:background="@drawable/rounded_corners_button_transp"
+                        android:scaleType="center"
+                        android:src="@mipmap/pro_paket"
+                        android:id="@+id/imageView9" />
+
+                    <customfonts.TextViewSFProDisplayMedium
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/imageView9"
+                        android:layout_centerHorizontal="true"
+                        android:maxLines="1"
+                        android:text="@string/home_mSend"
+                        android:textAllCaps="false"
+                        android:textColor="@color/black"
+                        android:textSize="13sp" />
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="90dip"
+                android:layout_weight="0.25"
+                android:clickable="true"
+                android:gravity="center">
+
+                <RelativeLayout
+                    android:id="@+id/home_mFood"
+                    android:layout_width="60dp"
+                    android:layout_height="80dp"
+                    android:layout_marginTop="10dp"
+                    android:clickable="true">
+
+                    <ImageView
+                        android:layout_width="fill_parent"
+                        android:layout_height="60dp"
+                        android:background="@drawable/rounded_corners_button_transp"
+                        android:scaleType="center"
+                        android:src="@mipmap/pro_food"
+                        android:id="@+id/imageView10" />
+
+                    <customfonts.TextViewSFProDisplayMedium
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/imageView10"
+                        android:layout_centerHorizontal="true"
+                        android:maxLines="1"
+                        android:text="@string/home_mFood"
+                        android:textAllCaps="false"
+                        android:textColor="@color/black"
+                        android:textSize="13sp" />
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:baselineAligned="false"
+            android:orientation="horizontal"
+            android:background="@color/white"
+            android:weightSum="1">
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="90dip"
+                android:layout_weight="0.25"
+                android:clickable="true"
+                android:gravity="center">
+
+                <RelativeLayout
+                    android:id="@+id/home_mMart"
+                    android:layout_width="60dp"
+                    android:layout_height="80dp"
+                    android:layout_marginTop="10dp"
+                    android:clickable="true">
+
+                    <ImageView
+                        android:layout_width="fill_parent"
+                        android:layout_height="60dp"
+                        android:background="@drawable/rounded_corners_button_transp"
+                        android:scaleType="center"
+                        android:src="@mipmap/pro_toko"
+                        android:id="@+id/imageView" />
+
+                    <customfonts.TextViewSFProDisplayMedium
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/imageView"
+                        android:layout_centerHorizontal="true"
+                        android:maxLines="1"
+                        android:text="@string/home_mMart"
+                        android:textAllCaps="false"
+                        android:textColor="@color/black"
+                        android:textSize="13sp" />
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="90dip"
+                android:layout_weight="0.25"
+                android:clickable="true"
+                android:gravity="center">
+
+                <RelativeLayout
+                    android:id="@+id/home_mMassage"
+                    android:layout_width="60dp"
+                    android:layout_height="80dp"
+                    android:layout_marginTop="10dp"
+                    android:clickable="true">
+
+                    <ImageView
+                        android:layout_width="fill_parent"
+                        android:layout_height="60dp"
+                        android:background="@drawable/rounded_corners_button_transp"
+                        android:scaleType="center"
+                        android:src="@mipmap/pro_pijat"
+                        android:id="@+id/imageView11" />
+
+                    <customfonts.TextViewSFProDisplayMedium
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/imageView11"
+                        android:layout_centerHorizontal="true"
+                        android:maxLines="1"
+                        android:text="@string/home_mMassage"
+                        android:textAllCaps="false"
+                        android:textColor="@color/black"
+                        android:textSize="13sp" />
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="90dip"
+                android:layout_weight="0.25"
+                android:clickable="true"
+                android:gravity="center">
+
+                <RelativeLayout
+                    android:id="@+id/home_mBox"
+                    android:layout_width="60dp"
+                    android:layout_height="80dp"
+                    android:layout_marginTop="10dp"
+                    android:clickable="true">
+
+                    <ImageView
+                        android:layout_width="fill_parent"
+                        android:layout_height="60dp"
+                        android:background="@drawable/rounded_corners_button_transp"
+                        android:scaleType="center"
+                        android:src="@mipmap/pro_box"
+                        android:id="@+id/imageView12" />
+
+                    <customfonts.TextViewSFProDisplayMedium
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/imageView12"
+                        android:layout_centerHorizontal="true"
+                        android:maxLines="1"
+                        android:text="@string/home_mBox"
+                        android:textAllCaps="false"
+                        android:textColor="@color/black"
+                        android:textSize="13sp" />
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="90dip"
+                android:layout_weight="0.25"
+                android:clickable="true"
+                android:gravity="center">
+
+                <RelativeLayout
+                    android:id="@+id/home_mService"
+                    android:layout_width="60dp"
+                    android:layout_height="80dp"
+                    android:layout_marginTop="10dp"
+                    android:clickable="true">
+
+                    <ImageView
+                        android:layout_width="fill_parent"
+                        android:layout_height="60dp"
+                        android:background="@drawable/rounded_corners_button_transp"
+                        android:scaleType="center"
+                        android:src="@mipmap/pro_jasa"
+                        android:id="@+id/imageView13" />
+
+                    <customfonts.TextViewSFProDisplayMedium
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/imageView13"
+                        android:layout_centerHorizontal="true"
+                        android:maxLines="1"
+                        android:text="@string/home_mService"
+                        android:textAllCaps="false"
+                        android:textColor="@color/black"
+                        android:textSize="13sp" />
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/grey"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:baselineAligned="false"
+            android:orientation="horizontal"
+            android:weightSum="1"
+            android:visibility="gone">
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="70dip"
+                android:layout_weight="0.25"
+                android:clickable="true">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="@dimen/menu_marginBottom"
+                    android:maxLines="1"
+                    android:text="@string/home_mBill"
+                    android:textAllCaps="false"
+                    android:textColor="@color/black"
+                    android:textSize="10sp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="70dip"
+                android:layout_weight="0.25"
+                android:clickable="true">
+
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="30dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:scaleType="center"
+                    android:src="@mipmap/pro_jualbeli" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="@dimen/menu_marginBottom"
+                    android:maxLines="1"
+                    android:text="@string/home_mTour"
+                    android:textAllCaps="false"
+                    android:textColor="@color/black"
+                    android:textSize="10sp" />
+
+            </RelativeLayout>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="2dp"
+            android:layout_height="100dp"
+            android:background="@color/white"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/character_driver" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center_vertical">
+
+                <customfonts.TextViewSFProDisplayMedium
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="100dp"
+                    android:text="Welcome to Go-RideMe"
+                    android:textColor="@color/material_yellow_800"
+                    android:textStyle="bold"
+                    android:textSize="20dp" />
+
+                <customfonts.TextViewSFProDisplayRegular
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="13dp"
+                    android:layout_marginLeft="100dp"
+                    android:layout_marginRight="10dp"
+                    android:text="A pride for us can serve you. thank you"
+                    android:textColor="@color/black" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/grey"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@color/white"
+            android:layout_marginTop="2dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="@color/white"
+                android:layout_marginTop="2dp">
+
+                <customfonts.TextViewSFProDisplayMedium
+                    android:layout_width="150dp"
+                    android:layout_height="match_parent"
+                    android:text="Food"
+                    android:drawableLeft="@mipmap/pro_food"
+                    android:gravity="center_vertical"
+                    android:textSize="16dp" />
+
+                <customfonts.TextViewSFProDisplayMedium
+                    android:id="@+id/show_more"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Show More"
+                    android:layout_marginRight="15dp"
+                    android:gravity="center_vertical|right"
+                    android:textSize="16dp"
+                    android:textColor="@color/material_deep_orange_500"
+                    android:layout_marginLeft="15dp"
+                    android:layout_weight="1" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/nearme_recycler"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white" />
+
+        <ProgressBar
+            android:id="@+id/nearme_progress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/grey"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@color/white"
+            android:layout_marginTop="2dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="@color/white"
+                android:layout_marginTop="2dp">
+
+                <customfonts.TextViewSFProDisplayMedium
+                    android:layout_width="150dp"
+                    android:layout_height="match_parent"
+                    android:text="Box"
+                    android:drawableLeft="@mipmap/pro_box"
+                    android:gravity="center_vertical"
+                    android:textSize="16dp" />
+
+                <customfonts.TextViewSFProDisplayMedium
+                    android:id="@+id/show_more_box"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Show More"
+                    android:layout_marginRight="15dp"
+                    android:gravity="center_vertical|right"
+                    android:textSize="16dp"
+                    android:textColor="@color/material_deep_orange_500"
+                    android:layout_marginLeft="15dp"
+                    android:layout_weight="1" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:background="@color/white"
+            android:id="@+id/cargo_type_recyclerView"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+
+</ScrollView>

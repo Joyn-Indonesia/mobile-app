@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:adjustViewBounds="true"
+            android:background="@color/blue"
+            android:scaleType="fitXY" />
+
+        <ImageView
+            android:id="@+id/btn_home"
+            android:layout_width="36dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="12dp"
+            android:src="@drawable/ic_arrow_back_yellow"
+            android:tint="@color/white"
+            android:adjustViewBounds="true"
+            android:visibility="visible" />
+
+        <customfonts.TextViewSFProDisplayMedium
+            android:id="@+id/mMartDetail_title"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="bottom"
+            android:gravity="center"
+            android:paddingLeft="12dp"
+            android:text="@string/home_mRide"
+            android:textAllCaps="true"
+            android:textColor="@color/material_light_white"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+    </FrameLayout>
+
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_below="@+id/title"
+        android:id="@+id/mMartDetail_recycler"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp" />
+
+    <LinearLayout
+        android:layout_below="@+id/mMartDetail_recycler"
+        android:id="@+id/est_biaya"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:layout_marginTop="5dp"
+        android:weightSum="1"
+        android:orientation="horizontal">
+
+        <customfonts.TextViewSFProDisplayRegular
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:gravity="center_vertical"
+            android:paddingLeft="5dp"
+            android:text="@string/food_cost"
+            android:textSize="16sp"
+            android:drawableLeft="@drawable/ic_mfood_cost" />
+
+        <customfonts.TextViewSFProDisplayRegular
+            android:id="@+id/mMartDetail_total"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:gravity="right"
+            android:padding="5dp"
+            android:layout_marginRight="15dp"
+            android:text="$. loading..."
+            android:textSize="16sp"
+            android:textColor="@color/material_blue_grey_700" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_below="@+id/est_biaya"
+        android:id="@+id/ongkir"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:weightSum="1"
+        android:orientation="horizontal">
+
+        <customfonts.TextViewSFProDisplayRegular
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:gravity="center_vertical"
+            android:paddingLeft="5dp"
+            android:text="@string/food_delivery"
+            android:textSize="16sp"
+            android:drawableLeft="@drawable/ic_mfood_cost" />
+
+        <customfonts.TextViewSFProDisplayRegular
+            android:id="@+id/delivery_cost"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:gravity="right"
+            android:padding="5dp"
+            android:layout_marginRight="15dp"
+            android:text="$. loading..."
+            android:textSize="16sp"
+            android:textColor="@color/material_blue_grey_700" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_below="@+id/ongkir"
+        android:id="@+id/baseline"
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:background="@color/blueSoft" />
+
+    <LinearLayout
+        android:layout_below="@+id/baseline"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:weightSum="1"
+        android:background="@color/material_green_400"
+        android:orientation="horizontal">
+
+        <customfonts.TextViewSFProDisplayMedium
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:gravity="center_vertical"
+            android:paddingLeft="5dp"
+            android:text="@string/food_total"
+            android:textSize="16sp"
+            android:textColor="@color/material_light_white"
+            android:drawableLeft="@drawable/ic_mfood_cost" />
+
+        <customfonts.TextViewSFProDisplayMedium
+            android:id="@+id/total_cost"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:gravity="right"
+            android:padding="5dp"
+            android:layout_marginRight="15dp"
+            android:text="$. loading..."
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="@color/material_light_white" />
+
+
+    </LinearLayout>
+
+</RelativeLayout>

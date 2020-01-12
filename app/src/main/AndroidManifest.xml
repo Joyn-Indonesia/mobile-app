@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.joyn.me"
+    android:installLocation="auto">
+
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+
+    <uses-permission-sdk-23 android:name="android.permission.CAMERA" />
+    <uses-permission-sdk-23 android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:name="com.com.joyn.me.GoridemeAplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="false"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name="com.com.joyn.me.splash.SplashActivity"
+            android:noHistory="true"
+            android:theme="@style/AppTheme.Splash">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.com.joyn.me.home.login" />
+        <activity android:name="com.com.joyn.me.signIn.SignInActivity" />
+        <activity android:name="com.com.joyn.me.home.MainActivity" />
+        <activity android:name="com.com.joyn.me.signUp.SignUpActivity" />
+        <activity android:name="com.com.joyn.me.mRideCar.RideCarActivity" />
+        <activity android:name="com.com.joyn.me.mRideCar.WaitingActivity" />
+        <activity android:name="com.com.joyn.me.mMart.MartActivity" />
+        <activity android:name="com.com.joyn.me.mMart.LocationPickerActivity" />
+        <activity android:name="com.com.joyn.me.mMart.MartWaitingActivity" />
+        <activity android:name="com.com.joyn.me.mSend.SendWaitingActivity" />
+        <activity android:name="com.com.joyn.me.mBox.BoxActivity" />
+        <activity android:name="com.com.joyn.me.mBox.BoxOrder" />
+        <activity android:name="com.com.joyn.me.mBox.BoxDetailOrder" />
+        <activity android:name="com.com.joyn.me.mBox.MboxWaiting" />
+        <activity android:name="com.com.joyn.me.mBox.PickLocation" />
+        <activity
+            android:name="com.com.joyn.me.mService.mServiceActivity"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity android:name="com.com.joyn.me.mService.mServiceBook" />
+        <activity android:name="com.com.joyn.me.mService.mServiceWaiting" />
+        <activity android:name="com.com.joyn.me.mService.mServiceProgress" />
+        <activity android:name="com.com.joyn.me.mMassage.MassageActivity" />
+        <activity android:name="com.com.joyn.me.mMassage.LocationPickerActivity" />
+        <activity android:name="com.com.joyn.me.mMassage.WaitingMassageActivity" />
+        <activity android:name="com.com.joyn.me.home.submenu.history.details.MSendDetailActivity" />
+        <activity android:name="com.com.joyn.me.home.submenu.history.details.MMartDetailActivity" />
+
+        <service android:name="com.com.joyn.me.service.GoridemeMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        <service android:name="com.com.joyn.me.service.GoridemeInstanceIdService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+        <service android:name="com.com.joyn.me.mMassage.service.SendRequestMassageService" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <activity
+            android:name="com.com.joyn.me.mRideCar.InProgressActivity"
+            android:label="@string/title_activity_in_progress"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name="com.com.joyn.me.mRideCar.RateDriverActivity"
+            android:label="@string/title_activity_rate_driver"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name="com.com.joyn.me.home.submenu.help.HelpActivity"
+            android:label="@string/title_activity_help"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name="com.com.joyn.me.home.ChatActivity"
+            android:label="@string/title_activity_chat"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name="com.com.joyn.me.home.submenu.setting.UpdateProfileActivity"
+            android:label="@string/title_activity_update_profile"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name="com.com.joyn.me.home.submenu.setting.ChangePasswordActivity"
+            android:label="@string/title_activity_change_password"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name="com.com.joyn.me.home.submenu.setting.TermOfServiceActivity"
+            android:label="@string/title_activity_term_of_service"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name="com.com.joyn.me.home.submenu.setting.PrivacyPolicyActivity"
+            android:label="@string/title_activity_privacy_policy"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name="com.com.joyn.me.home.submenu.setting.FAQActivity"
+            android:label="@string/title_activity_faq"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name="com.com.joyn.me.home.submenu.TopUpActivity"
+            android:label="@string/title_activity_top_up"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name="com.com.joyn.me.home.submenu.history.HistoryDetailActivity"
+            android:label="@string/title_activity_history_detail"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name="com.com.joyn.me.mSend.SendActivity"
+            android:label="@string/title_activity_send"
+            android:parentActivityName="com.com.joyn.me.home.MainActivity"
+            android:theme="@style/AppTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.com.joyn.me.home.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.com.joyn.me.mSend.AddDetailSendActivity"
+            android:label="@string/title_activity_add_detail_send"
+            android:parentActivityName="com.com.joyn.me.mSend.SendActivity"
+            android:theme="@style/AppTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.com.joyn.me.mSend.SendActivity" />
+        </activity>
+        <activity
+            android:name="com.com.joyn.me.mMassage.InProgressFinishedMassageActivity"
+            android:theme="@style/AppTheme" />
+        <activity android:name="com.com.joyn.me.mFood.FoodActivity" />
+        <activity android:name="com.com.joyn.me.mFood.NearmeActivity" />
+        <activity android:name="com.com.joyn.me.mFood.FoodMenuActivity" />
+        <activity
+            android:name="com.com.joyn.me.mFood.MakananActivity"
+            android:windowSoftInputMode="stateHidden" />
+        <activity android:name="com.com.joyn.me.mFood.BookingActivity" />
+        <activity android:name="com.com.joyn.me.mFood.SearchRestoranActivity" />
+        <activity android:name="com.com.joyn.me.mFood.KategoriSelectActivity" />
+        <activity android:name="com.com.joyn.me.mFood.LocationPickerActivity" />
+        <activity android:name="com.com.joyn.me.mFood.FoodWaitingActivity" />
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="com.joyn.me.fileProvider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+
+        <activity android:name="com.com.joyn.me.home.submenu.DaftarbankActivity" />
+        <activity android:name="com.com.joyn.me.signIn.ForgotActivity" />
+        <activity android:name="com.com.joyn.me.home.ComingsoonActivity"></activity>
+    </application>
+
+</manifest>

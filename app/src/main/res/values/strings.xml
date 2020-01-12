@@ -1,0 +1,228 @@
+<resources>
+    <string name="app_name">Go-RideMe</string>
+
+    <string name="main_menuHome">Home</string>
+    <string name="main_menuHistory">History</string>
+    <string name="main_menuHelp">Help</string>
+    <string name="main_menuSetting">Setting</string>
+    <string name="main_pickLocation">Pick Location</string>
+
+    <string name="home_mRide">Ride</string>
+    <string name="home_mCar">Car</string>
+    <string name="home_mFood">Food</string>
+    <string name="home_mMart">Mart</string>
+    <string name="home_mSend">Send</string>
+    <string name="home_mMassage">Massage</string>
+    <string name="home_mBox">Box</string>
+    <string name="home_mService">Service</string>
+    <string name="home_mTour">Tour</string>
+    <string name="home_mBill">Bill</string>
+
+    <string name="hint_email">Email</string>
+    <string name="hint_password">Password</string>
+    <string name="hint_firstName">First Name</string>
+    <string name="hint_lastName">Last Name</string>
+    <string name="hint_phoneNumber">Phone</string>
+    <string name="hint_address">Address</string>
+
+    <string name="text_mPay">Wallet</string>
+    <string name="text_cash">Cash</string>
+    <string name="text_topUp">Top Up</string>
+    <string name="text_order">Order</string>
+    <string name="text_next">Next</string>
+    <string name="text_send">Send</string>
+    <string name="text_save">Save</string>
+    <string name="text_noInternet">No internet Access</string>
+    <string name="text_close">Close</string>
+    <string name="text_updating">Loading....</string>
+    <string name="text_addressNotAvailable">Address not available.</string>
+    <string name="text_cancel">Cancel</string>
+
+    <string name="setting_changePassword">Change Password</string>
+    <string name="setting_newPassword">New Password</string>
+    <string name="setting_confirmPassword">Confirm Password</string>
+    <string name="setting_privacyPolicy">Privacy Policy</string>
+    <string name="setting_faq">FAQ</string>
+    <string name="setting_termOfService">Term Of Service</string>
+    <string name="setting_rateApps">Rate Apps</string>
+    <string name="setting_logout">Log Out</string>
+    <string name="setting_editProfile">Edit</string>
+
+    <string name="setting_nameDummy">David Studio</string>
+    <string name="setting_emailDummy">davidmonte1991@gmail.com</string>
+    <string name="setting_phoneDummy">+6285240257872</string>
+
+    <string name="waiting_pleaseWait">Please Wait....</string>
+    <string name="waiting_desc">We are searching for the closest driver</string>
+    <string name="mart_searchLocation">Search Location…</string>
+
+    <string name="button_signIn">SignIn</string>
+    <string name="button_signUp">SignUp</string>
+    <string name="button_haveAccount">Have Account?</string>
+
+    <string name="dialog_loading">Loading…</string>
+
+    <string name="ride_location">Location</string>
+    <string name="ride_destination">Destination</string>
+
+    <string name="ride_setPickUp">Set PickUp</string>
+    <string name="ride_setDestination">Set Destination</string>
+
+    <string name="ride_price">Price (0 Km)</string>
+    <string name="ride_cost">Rp 0 ,-</string>
+    <string name="ride_discount">Diskon 20% with wallet</string>
+
+    <string name="mart_nearDriver">Near Driver</string>
+    <string name="mart_martName">Mart Name</string>
+    <string name="mart_location">Location</string>
+    <string name="mart_order">Order</string>
+    <string name="mart_product">Product</string>
+    <string name="mart_details">Detail</string>
+    <string name="mart_to">Destination</string>
+    <string name="mart_estimatedBiaya">Estimate Cost</string>
+    <string name="mart_useLocation">Set this location</string>
+
+    <string name="sender">Sender</string>
+    <string name="receiver">Receiver</string>
+    <string name="send_item_description">Item Description</string>
+    <string name="send_description">Clear description</string>
+    <string name="send_sender_name">Sender Name</string>
+    <string name="send_sender_phone">Phone</string>
+    <string name="send_receiver_name">Receiever</string>
+    <string name="send_receiver_phone">Phone</string>
+    <string name="send_penerima">Sender</string>
+    <string name="send_alamat">Address</string>
+
+    <string name="mbox_cargo">Which vehicle do you need to move your goods?</string>
+    <string name="mbox_dimension">Dimention 200x130x120</string>
+    <string name="mbox_maxweight">Max Weight 1000kg</string>
+    <string name="mbox_drivernear">closest driver</string>
+    <string name="mbox_origin">Origin</string>
+    <string name="mbox_destination">Destination</string>
+    <string name="mbox_location">Location</string>
+    <string name="mbox_location_detail">Detail Location</string>
+    <string name="mbox_contact_person">Contact (Optional)</string>
+    <string name="mbox_name">Name</string>
+    <string name="mbox_phone">Phone</string>
+    <string name="mbox_instruction">Instruction (Optional)</string>
+    <string name="mbox_remove">Delete</string>
+    <string name="mbox_item_deliver">Items Sent</string>
+    <string name="mbox_items">Item</string>
+    <string name="mbox_note_items">Item Note</string>
+    <string name="mbox_extra_feature">Extra Feature</string>
+    <string name="mbox_loading_service">Loading Service</string>
+    <string name="mbox_note_extra_feature">The driver only helps you raise and lower items from the vehicle, if you need more help, check for additional assistants</string>
+    <string name="mbox_note_insurance">Choose the amount of premium and scope of insurance according to the value of your goods and needs</string>
+    <string name="mbox_additional">1 Additional</string>
+    <string name="mbox_insurance">Insurance</string>
+    <string name="mbox_term">agree with the terms and conditions</string>
+    <string name="mbox_detail">Detail</string>
+    <string name="mbox_payment">Payment</string>
+    <string name="mbox_price">Price</string>
+    <string name="mbox_payment_method">Payment Method</string>
+    <string name="mbox_setloc">Set Location</string>
+
+    <string name="service_ac">Service AC</string>
+    <string name="service_layanan">Service</string>
+    <string name="service_actype">AC Type</string>
+    <string name="service_quantity">QTY</string>
+    <string name="service_residential">Residential Type</string>
+    <string name="service_problem">Problem</string>
+    <string name="service_price">Price</string>
+    <string name="setloc">Set Location</string>
+    <string name="service_progress">Your technicians will help you to fix your AC problem</string>
+
+    <string name="massage_pleaseWait">Please Wait…</string>
+    <string name="massage_massageType">Massage Type</string>
+    <string name="massage_duration">Duration</string>
+    <string name="massage_therapistPreference">Preference Therapist</string>
+    <string name="massage_yourGender">Your Gender</string>
+    <string name="lupa">Forgot Password?</string>
+
+    <string name="massage_therapist">Therapist</string>
+
+    <string name="massage_genderMale">Male</string>
+    <string name="massage_genderFemale">Female</string>
+    <string name="massage_genderNoPreference">No Prefer</string>
+    <string name="massage_60duration">60m</string>
+    <string name="massage_90duration">90m</string>
+    <string name="massage_120duration">120m</string>
+    <string name="massage_next">Next</string>
+    <string name="massage_location">Location</string>
+    <string name="massage_dateTime">Date &amp; Time</string>
+    <string name="massage_scheduleAndAddress">Schedule And Address</string>
+    <string name="massage_price">Price</string>
+    <string name="massage_orderDetails">Order Detail</string>
+    <string name="massage_additionalNotes">Additional Note</string>
+    <string name="massage_tanggalPesanan">Order time must not be less than the current time.</string>
+    <string name="massage_cost">$ 1.5 ,-</string>
+    <string name="massage_status">Status</string>
+    <string name="massage_cancel">Cancel</string>
+    <string name="massage_cost_text">Cost</string>
+
+    <string name="title_activity_in_progress">In Progress</string>
+    <string name="title_activity_rate_driver">Rate Driver</string>
+    <string name="title_activity_help">Can I help You?</string>
+    <string name="title_activity_chat">Chat</string>
+    <string name="title_activity_update_profile">Update Profile</string>
+    <string name="title_activity_change_password">Change Password</string>
+    <string name="title_activity_term_of_service">Term of Service</string>
+    <string name="title_activity_privacy_policy">Privacy Policy</string>
+
+    <string name="title_activity_faq">Frequently Asked Questions</string>
+    <string name="title_activity_top_up">Top Up</string>
+
+    <array name="list_bank">
+        <item>Bank BCA</item>
+        <item>Bank BNI</item>
+        <item>Bank Mandiri</item>
+        <item>Bank Lainnya</item>
+    </array>
+
+    <string-array name="mpay">
+        <item>Tunai</item>
+        <item>Wallet</item>
+    </string-array>
+
+    <string name="title_activity_history_detail">History Detail</string>
+    <string name="title_activity_send">SEND</string>
+    <string name="title_activity_add_detail_send">Add Detail</string>
+
+    <string name="food_search">What do you want to eat today?</string>
+    <string name="food_explore">Explore</string>
+    <string name="food_makanan">Food</string>
+    <string name="food_notes">Add Notes</string>
+    <string name="food_booking">Confirm</string>
+    <string name="food_deliver">Deliver</string>
+    <string name="food_destination">Add Destination</string>
+    <string name="food_payment">Payment</string>
+    <string name="food_cost">Cost (Est)</string>
+    <string name="food_delivery">Delivery Cost</string>
+    <string name="food_total">Total</string>
+    <string name="food_cash">Cash</string>
+    <string name="food_pay">Pay With</string>
+    <string name="food_searchRestaurant">Search Restaurant</string>
+    <string name="food_minimum3Chars">Minimum 3 Chars</string>
+    <string name="food_tryAnotherSearchTerm">No results, try other keywords.</string>
+    <string name="food_noRecordFound">Not Found.</string>
+    <string name="food_addNotes">Add Notes</string>
+    <string name="food_itemsToOrder">Item To Order</string>
+    <string name="food_partner">Vendor</string>
+    <string name="food_closed">Closed</string>
+    <string name="near_food">Near Food</string>
+    <string name="manual_food">Manual Order</string>
+
+    <string name="acc_name">Account Name</string>
+    <string name="acc_number">Account Number</string>
+    <string name="hint_verif">Phone Number</string>
+    <string name="verif_no">Verification</string>
+    <string name="hint_telp">insert 6 code</string>
+    <string name="kirim_no">Send Phone Number</string>
+    <string name="kirim_ulang">Send again</string>
+
+    <string name="notification_cancel">Order has been canceled</string>
+    <string name="notification_start">to the destination location</string>
+    <string name="notification_accept">you found a driver</string>
+    <string name="notification_finish">thank you for using our services</string>
+
+</resources>

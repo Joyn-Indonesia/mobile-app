@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardBackgroundColor="@android:color/white"
+    app:cardCornerRadius="@dimen/spacing_xmedium"
+    app:cardElevation="2dp"
+    app:cardUseCompatPadding="true">
+
+    <RelativeLayout
+        android:id="@+id/itemHelp_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/white"
+        android:paddingBottom="6dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:paddingTop="5dp">
+
+        <ImageView
+            android:id="@+id/itemHelp_icon"
+            android:layout_width="52dp"
+            android:layout_height="52dp"
+            android:background="@drawable/rounded_corners_button_transp"
+            android:src="@mipmap/pro_food" />
+
+        <customfonts.TextViewSFProDisplayMedium
+            android:id="@+id/itemHelp_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="12dp"
+            android:layout_toLeftOf="@+id/itemHelp_arrow"
+            android:layout_toRightOf="@+id/itemHelp_icon"
+            android:maxLines="1"
+            android:text="@string/home_mRide"
+            android:textAllCaps="true"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:id="@+id/itemHelp_arrow"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:adjustViewBounds="true"
+            android:tint="@color/material_light_white"
+            android:src="@drawable/ic_keyboard_arrow_right_black_48dp" />
+
+    </RelativeLayout>
+</android.support.v7.widget.CardView>
